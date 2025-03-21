@@ -6,11 +6,9 @@
   --grey: light-dark(#f5f7f9, rgb(61, 63, 65));
   --pale-blue: light-dark(#2b2b2b, #b7c1cc);
   --orange: rgb(188, 122, 64);
-  --green: light-dark(rgb(164, 189, 92), rgb(171, 193, 109));
+  --green: light-dark(rgb(154, 185, 60), rgb(171, 193, 109));
   --vibrant-purple: rgb(204, 118, 209);
   --light-blue: rgb(169, 216, 248);
-  /* sizes */
-  --border-radius: 4px;
 }
 
 body {
@@ -38,7 +36,7 @@ header {
 
 nav {
   background-color: var(--grey);
-  border-radius: var(--border-radius);
+  border-radius: 4px;
   padding: 4px 8px;
   font-size: 12pt;
   a {
