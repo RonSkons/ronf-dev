@@ -1,0 +1,16 @@
+---
+import NavBar from '../components/NavBar.astro'
+const props = Astro.props
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{props.title} — Ron Friedman</title>
+	</head>
+	<body>
+		<NavBar />
+		<slot />
+	</body>
+</html>
