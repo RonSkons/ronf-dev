@@ -1,6 +1,6 @@
 :root {
   /* colors */
-  --yellow: #e8bf6a;
+  --yellow: #e7bf6b;
   --dark-grey: #2b2b2b;
   --grey: rgb(61, 63, 65);
   --pale-blue: #b7c1cc;
@@ -15,20 +15,23 @@
 body {
   background-color: var(--dark-grey);
   color: var(--pale-blue);
+  font-family: monospace;
+  text-align: center;
 }
 
 nav {
   background-color: var(--grey);
   border-radius: var(--border-radius);
   padding: 4px 8px;
-}
-
-h1 {
-  color: var(--green);
+  font-size: 12pt;
 }
 
 a {
   color: var(--yellow);
+}
+
+h1 {
+  color: var(--green);
 }
 
 nav > a {
@@ -40,7 +43,7 @@ nav > a:hover {
 }
 
 .selected {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .separator {
