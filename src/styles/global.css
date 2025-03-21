@@ -40,6 +40,12 @@ nav {
   border-radius: var(--border-radius);
   padding: 4px 8px;
   font-size: 12pt;
+  a {
+    text-decoration-line: none;
+  }
+  a:hover {
+    text-decoration-line: underline;
+  }
 }
 
 a {
@@ -50,12 +56,12 @@ h1 {
   color: var(--green);
 }
 
-nav > a {
-  text-decoration-line: none;
+li {
+  margin: 4px 0px;
 }
 
-nav > a:hover {
-  text-decoration-line: underline;
+.main-heading {
+  margin: 8px 16px;
 }
 
 .selected {

@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar.astro'
 import '../styles/global.css'
 const props = Astro.props
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -12,9 +12,8 @@ const props = Astro.props
 	</head>
 	<body>
 		<header>
-			<div style="display: flex; align-items: baseline; column-gap: 10px; row-gap: 10px; justify-content: center; flex-wrap: wrap">
-				<a href="/" style="text-decoration: none"><h1>Ron's Site</h1></a>
-				<em style="cursor: wait">(Under Construction)</em>
+			<div style="display: flex; flex-direction: row; align-items: center; row-gap: 10px; justify-content: center; flex-wrap: wrap">
+				<a href="/" style="text-decoration: none"><h1 class="main-heading">Ron's Site</h1></a>
 			<NavBar title={props.title}/>
 			</div>
 		</header>
