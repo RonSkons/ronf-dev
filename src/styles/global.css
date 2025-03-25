@@ -71,3 +71,24 @@ li {
   color: var(--orange);
   user-select: none;
 }
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-item {
+  background-color: var(--grey);
+  border-radius: 8px;
+  padding: 0 12px;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+}
+
+.resume-icon {
+  margin-top: 12px;
+  margin-right: 12px;
+  border-radius: 4px;
+  width: 64px;
+  height: 64px;
+}

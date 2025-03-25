@@ -1,0 +1,17 @@
+---
+import Separator from "./Separator.astro"
+const props = Astro.props
+---
+<div class="resume-item">
+    <div style="display: flex; flex-direction: row; align-items: top; row-gap: 10px; flex-wrap: wrap">
+        <div style="display: flex; flex-direction: row; align-items: top">
+        <img class="resume-icon" src={"../../icons/" + props.icon} alt={props.organization + " Logo"}>
+        <div>
+            <h3 style="margin-bottom: 8px">{props.title}</h3> 
+            <em>{props.organization}</em>
+        </div>
+        </div>
+        <p style="margin-left: auto">{props.from} <Separator /> {props.to}</p>
+    </div>
+    <slot />
+</div>

@@ -1,9 +1,24 @@
 ---
+import ResumeItem from "../components/ResumeItem.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Resumé">
     <h2>Ron Friedman</h2>
     <h3>Email: contact [at] ronf [dot] dev</h3>
-    <em>TODO</em>
+    <h3>Work Experience:</h3>
+    <div class="resume-container">
+        <ResumeItem organization="Amazon" title="SDE Intern (AWS)" from="May 2025" to="Aug 2025" icon="amazon-logo.jpg">
+        </ResumeItem>
+        <ResumeItem organization="Speedline Solutions" title="Software Engineer (Co-op)" from="May 2024" to="Aug 2024" icon="speedline-logo.jpg">
+        </ResumeItem>
+        <ResumeItem organization="Apryse" title="Research Engineer (Co-op)" from="May 2023" to="Dec 2023" icon="apryse-logo.jpg">
+        </ResumeItem>
+        <ResumeItem organization="UBC" title="Computer Science TA" from="Sep 2022" to="Apr 2025" icon="ubc-logo.jpg">
+        </ResumeItem>
+    </div>
+    <h3>Education:</h3>
+    <div class="resume-container">
+        <ResumeItem organization="UBC" title="B.Sc. Computer Science" from="Sep 2021" to="Apr 2026" icon="ubc-logo.jpg" />
+    </div>
 </BaseLayout>
