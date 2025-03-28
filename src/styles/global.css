@@ -58,7 +58,7 @@ summary {
   cursor: pointer;
 }
 
-h1 {
+.green {
   color: var(--green);
 }
 
