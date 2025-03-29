@@ -21,6 +21,7 @@ body {
   margin-left: 25vw;
   margin-right: 25vw;
   font-size: 15px;
+  min-height: 94vh;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -99,4 +100,9 @@ li {
   border-radius: 4px;
   width: 64px;
   height: 64px;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 8px;
 }
