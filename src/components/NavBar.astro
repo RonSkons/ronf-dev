@@ -1,12 +1,12 @@
 ---
 import Separator from "./Separator.astro";
-const title = Astro.props.title
+const title = Astro.props.title;
 ---
 
 <nav>
-    <a href="/" class:list={[{selected: title == "Home"}]}>Home</a>
-    <Separator />
-    <a href="/resume" class:list={[{selected: title == "Resumé"}]}>Resumé</a>
-    <Separator />
-    <a href="/links" class:list={[{selected: title == "Links"}]}>Links</a>
+  <a href="/" class:list={[{ selected: title == "Home" }]}>Home</a>
+  <Separator />
+  <a href="/resume" class:list={[{ selected: title == "Resumé" }]}>Resumé</a>
+  <Separator />
+  <a href="/links" class:list={[{ selected: title == "Links" }]}>Links</a>
 </nav>

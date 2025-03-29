@@ -1,22 +1,27 @@
 ---
-import NavBar from '../components/NavBar.astro'
-import '../styles/global.css'
-const props = Astro.props
+import NavBar from "../components/NavBar.astro";
+import "../styles/global.css";
+const props = Astro.props;
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>{props.title} — Ron Friedman</title>
-	</head>
-	<body>
-		<header>
-			<div style="display: flex; flex-direction: row; align-items: center; row-gap: 10px; justify-content: center; flex-wrap: wrap">
-				<a href="/" style="text-decoration: none"><h1 class="main-heading green">Ron's Site</h1></a>
-			<NavBar title={props.title}/>
-			</div>
-		</header>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{props.title} — Ron Friedman</title>
+  </head>
+  <body>
+    <header>
+      <div
+        style="display: flex; flex-direction: row; align-items: center; row-gap: 10px; justify-content: center; flex-wrap: wrap"
+      >
+        <a href="/" style="text-decoration: none"
+          ><h1 class="main-heading green">Ron's Site</h1></a
+        >
+        <NavBar title={props.title} />
+      </div>
+    </header>
+    <slot />
+  </body>
 </html>
