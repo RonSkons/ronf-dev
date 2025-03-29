@@ -9,6 +9,19 @@ const props = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Ron Friedman's personal web page" />
+    <meta
+      name="keywords"
+      content="Ron Friedman, personal website, home page, UBC, intern, software, developer, portfolio"
+    />
+    <meta name="author" content="Ron Friedman" />
+    <meta property="og:title" content={props.title + " - Ron Friedman"} />
+    <meta
+      property="og:description"
+      content="Ron Friedman's personal web page"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ronf.dev" />
     <title>{props.title} — Ron Friedman</title>
   </head>
   <body>
